@@ -31,9 +31,26 @@ git commit -m "Initial commit"
 npm install
 ```
 
-### Protip
+Here's a handy snippet you can add to your `.bash_profile` to create new tools easily:
 
-When starting to use this repo, search for all instances of "node-cli-boilerplate" and convert them to the name of your tool.
+```
+function new_cli_tool () {
+  if [ -z "$1" ];
+  then
+    "Must specify a project name as the first argument"
+    exit 1
+  else
+    git clone --depth=1 https://github.com/jeremyckahn/node-cli-boilerplate.git "$1"
+    cd "$1" || exit 1
+    rm -rf .git
+    find . -type f -exec sed -i "" "s/node-cli-boilerplate/$1/g" {} \;
+    git init
+    git add --all
+    git commit -m "Initial commit"
+    npm install
+  fi
+}
+```
 
 ## License
 
