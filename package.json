@@ -12,7 +12,8 @@
     "test:watch": "nodemon --exec \"npm test\" --watch lib --watch test",
     "postinstall": "npm run build",
     "preversion": "npm test",
-    "postversion": "git push && git push --tags && npm publish"
+    "postversion": "git push && git push --tags && npm publish",
+    "exec": "./bin/cli.js"
   },
   "author": "jeremyckahn@gmail.com",
   "license": "MIT",
