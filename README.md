@@ -20,17 +20,6 @@ Omitting `--fix` prints the processed text to stdout.
 
 ## Getting started
 
-To use this as the base for a new project:
-
-```
-git clone --depth=1 https://github.com/jeremyckahn/node-cli-boilerplate.git
-rm -rf node-cli-boilerplate/.git
-git init
-git add --all
-git commit -m "Initial commit"
-npm install
-```
-
 Here's a handy snippet you can add to your `.bash_profile` to create new tools easily:
 
 ```
