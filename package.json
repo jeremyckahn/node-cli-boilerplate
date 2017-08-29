@@ -9,6 +9,7 @@
   "scripts": {
     "build": "webpack",
     "test": "mocha ./node_modules/babel-core/register.js test/index.js",
+    "test:debug": "mocha debug ./node_modules/babel-core/register.js test/index.js",
     "test:watch": "nodemon --exec \"npm test\" --watch lib --watch test",
     "postinstall": "npm run build",
     "preversion": "npm test",
