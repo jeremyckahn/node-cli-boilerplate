@@ -13,10 +13,7 @@ $: npm install && ./bin/cli.js --help
 
     -h, --help     output usage information
     -V, --version  output the version number
-    --fix          Overwrite provided file with processed version
 ```
-
-Omitting `--fix` prints the processed text to stdout.
 
 ## Getting started
 
