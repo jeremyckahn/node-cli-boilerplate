@@ -24,7 +24,7 @@ function new_cli_tool () {
   if [ -z "$1" ];
   then
     "Must specify a project name as the first argument"
-    exit 1
+    return
   else
     git clone --depth=1 https://github.com/jeremyckahn/node-cli-boilerplate.git "$1"
     cd "$1" || exit 1
