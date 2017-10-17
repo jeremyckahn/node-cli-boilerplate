@@ -2,7 +2,16 @@
   "name": "node-cli-boilerplate",
   "version": "0.0.0",
   "description": "Minimal, practical boilerplate for writing Node-powered CLI tools",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/jeremyckahn/node-cli-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremyckahn/node-cli-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeremyckahn/node-cli-boilerplate/issues",
+    "email": "AUTHOR_EMAIL@gmail.com"
+  },
   "bin": {
     "node-cli-boilerplate": "./bin/cli.js"
   },
