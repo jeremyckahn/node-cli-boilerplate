@@ -4,8 +4,14 @@ import assert from 'assert';
 
 import { readFileSync } from 'fs';
 
-const beforeBasic = readFileSync(path.join(__dirname, 'before/basic.js'), 'utf8');
-const afterBasic = readFileSync(path.join(__dirname, 'after/basic.js'), 'utf8');
+const beforeBasic = readFileSync(
+  path.join(__dirname, 'before/basic.txt'),
+  'utf8'
+);
+const afterBasic = readFileSync(
+  path.join(__dirname, 'after/basic.txt'),
+  'utf8'
+);
 
 describe('library', () => {
   it('returns the provided text', () => {
